@@ -13,7 +13,6 @@ with open('app.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 lr = joblib.load('dropout_prediction_model.pkl')
-le = joblib.load('encoder.pkl')
 
 input_names = {
                 'Marital status':'Marital status',
